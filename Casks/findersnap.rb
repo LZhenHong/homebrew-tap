@@ -1,6 +1,6 @@
 cask "findersnap" do
-  version "1.0.2"
-  sha256 "96f8b333c81b47a7b73604a2bacd0e6afd6e89f1726689626a1f7dc23c7abf83"
+  version "1.0.3"
+  sha256 "9483b7787f57c1c5234a99cf5a426918c63ced6088a487b4d5d2446087a7de8a"
 
   url "https://github.com/LZhenHong/FinderSnap/releases/download/#{version}/FinderSnap-#{version}.zip"
   name "FinderSnap"
