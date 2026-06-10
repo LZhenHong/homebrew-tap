@@ -7,7 +7,7 @@ cask "americano" do
   desc "Prevent your Mac from sleeping"
   homepage "https://github.com/LZhenHong/Americano"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Americano.app"
 

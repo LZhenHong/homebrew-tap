@@ -7,7 +7,7 @@ cask "vibedrafts" do
   desc "Create, manage, and send text drafts to the focused macOS app"
   homepage "https://github.com/LZhenHong/VibeDrafts"
 
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "VibeDrafts.app"
 
