@@ -1,6 +1,6 @@
 cask "americano" do
-  version "1.0.10"
-  sha256 "17c9cb5d968ce5d229ed9d9e3a799272558120ff55bfb47b0b1ade5d0a2210c0"
+  version "1.1.0"
+  sha256 "c759be9d4ad3a85398fc899f46325a8690b60f62eb5570ba5894674bffd89a33"
 
   url "https://github.com/LZhenHong/Americano/releases/download/v#{version}/Americano.app.zip"
   name "Americano"
