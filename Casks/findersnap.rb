@@ -1,6 +1,6 @@
 cask "findersnap" do
-  version "1.0.4"
-  sha256 "b789d62eaa23c442a3f90cee94b191519c823bf2d525bb5e256285f5aed38106"
+  version "1.0.5"
+  sha256 "fd1dd06dab14d4f7a3a44243dc9c5693a5cfa44c26995f7ec06508eeea3a4f4e"
 
   url "https://github.com/LZhenHong/FinderSnap/releases/download/#{version}/FinderSnap-#{version}.zip"
   name "FinderSnap"
@@ -10,12 +10,6 @@ cask "findersnap" do
   depends_on macos: :sonoma
 
   app "FinderSnap.app"
-
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/FinderSnap.app"],
-                   sudo: false
-  end
 
   zap trash: [
     "~/Library/Preferences/com.lzhlovesjyq.FinderSnap.plist",
