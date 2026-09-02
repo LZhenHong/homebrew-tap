@@ -1,12 +1,13 @@
 cask "americano" do
-  version "1.1.0"
-  sha256 "c759be9d4ad3a85398fc899f46325a8690b60f62eb5570ba5894674bffd89a33"
+  version "1.1.1"
+  sha256 "605315ee187e3ead814596485138d2c02c54f8f9dc806158cdab8bd85985a642"
 
   url "https://github.com/LZhenHong/Americano/releases/download/v#{version}/Americano.app.zip"
   name "Americano"
   desc "Prevent your Mac from sleeping"
   homepage "https://github.com/LZhenHong/Americano"
 
+  auto_updates true
   depends_on macos: :sonoma
 
   app "Americano.app"
