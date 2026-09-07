@@ -12,10 +12,8 @@ cask "americano" do
 
   app "Americano.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Americano.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/Americano.app"]
   end
 
   zap trash: [

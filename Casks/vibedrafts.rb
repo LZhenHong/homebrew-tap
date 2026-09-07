@@ -11,10 +11,8 @@ cask "vibedrafts" do
 
   app "VibeDrafts.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/VibeDrafts.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/VibeDrafts.app"]
   end
 
   zap trash: [
