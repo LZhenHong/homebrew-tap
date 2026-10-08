@@ -1,6 +1,6 @@
 cask "vibedrafts" do
-  version "0.0.1-rc.10"
-  sha256 "dfbf8b4f07aa413ae9e503f4ad6c0811c3d2b1abf07b33cd326a87344d38ed15"
+  version "0.0.1-rc.11"
+  sha256 "46f89d34f97f0559c115fc5db887d936a892889c28f45ffba410375a6230f3cb"
 
   url "https://github.com/LZhenHong/homebrew-tap/releases/download/vibedrafts-v#{version}/VibeDrafts-v#{version}.zip"
   name "VibeDrafts"
@@ -11,8 +11,10 @@ cask "vibedrafts" do
 
   app "VibeDrafts.app"
 
-  postflight_steps do
-    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/VibeDrafts.app"]
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/VibeDrafts.app"],
+                   sudo: false
   end
 
   zap trash: [
