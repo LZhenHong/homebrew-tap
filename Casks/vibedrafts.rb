@@ -1,6 +1,6 @@
 cask "vibedrafts" do
-  version "0.0.1-rc.13"
-  sha256 "da53a30a7efb9684875c636f6ef259ac29dc09b6ff75fdd4879484494c7d7b47"
+  version "0.0.1-rc.14"
+  sha256 "6ae5e2f2c756cde2ad0f1846518a83326fe50db7bd8e7663903bdc02154a8889"
 
   url "https://github.com/LZhenHong/homebrew-tap/releases/download/vibedrafts-v#{version}/VibeDrafts-v#{version}.zip"
   name "VibeDrafts"
