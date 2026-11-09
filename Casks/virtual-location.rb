@@ -5,10 +5,10 @@ cask "virtual-location" do
   url "https://github.com/LZhenHong/LZhenHong.github.io/releases/download/virtual-location-updates/VirtualLocation-#{version.csv.first}-#{version.csv.second}.dmg"
   name "VirtualLocation"
   desc "Set virtual locations on connected iPhones and iPads"
-  homepage "https://lzhenhong.github.io/products/virtual-location/"
+  homepage "https://edenapps.site/products/virtual-location/"
 
   livecheck do
-    url "https://lzhenhong.github.io/apps/virtual-location/updates/appcast.xml"
+    url "https://edenapps.site/apps/virtual-location/updates/appcast.xml"
     strategy :sparkle
   end
 
