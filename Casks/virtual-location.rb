@@ -1,6 +1,6 @@
 cask "virtual-location" do
-  version "0.1.1,6"
-  sha256 "cea14c5fdaab9a28a00152ab0baf2aac0bd482a1262274460d582cb7e3699daa"
+  version "1.0.0,2611101002"
+  sha256 "674afd240613f49f1720eaf1f6383a63ade484626317c24ed56e52272f7da7df"
 
   url "https://github.com/LZhenHong/homebrew-tap/releases/download/virtual-location-v#{version.csv.first}-#{version.csv.second}/VirtualLocation-#{version.csv.first}-#{version.csv.second}.dmg"
   name "VirtualLocation"
